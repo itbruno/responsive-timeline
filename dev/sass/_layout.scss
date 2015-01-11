@@ -78,7 +78,6 @@ header {
 #timeline {
 	width: 90%;
 	margin: 30px auto;
-	padding: 20px 0;
 	position: relative;
 	@include prefix(transition, all .4s ease);
 
@@ -191,6 +190,8 @@ header {
 
 @media screen and (max-width: 768px) {
 	#timeline {
+		margin: 30px;
+		padding: 0;
 		&:before {
 			left: 0;
 		}
