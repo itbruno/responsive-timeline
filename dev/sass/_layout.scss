@@ -15,7 +15,9 @@ body {
 	font-family: $base-font;
 	line-height: 20px;
 	font-size: 14px;
+	font-weight: 500;
 	color: $base-font-color;
+	-webkit-font-smoothing: antialiased;
 }
 
 img {max-width: 100%;}
@@ -32,7 +34,7 @@ a {
 h1, h2, h3, h4 {
 	font:{
 		family: $base-font-title;
-		weight: 500;
+		weight: 600;
 	}
 }
 
@@ -54,20 +56,23 @@ header {
 		font:{
 			family: $base-font-title;
 			size: 22px;
-			weight: 500;
+			weight: 600;
 		}
 		
 		> span {
 			color: lighten($primary-color, 20%);
-			font-weight: 300;
+			font-weight: 500;
 		}
 	}
 
 	.social {
 		float: right;
 		.btn {
-			font-family: "Dosis";
-			font-size: 14px;
+			font: {
+				family: "Dosis";
+				weight: 600;
+				size: 14px;
+			}
 			margin: 10px 5px;
 		}
 	}
@@ -133,7 +138,7 @@ header {
 				background: $timeline-color;
 				color: #fff;
 				margin: -20px -20px 0 -20px;
-				font-weight: 300;
+				font-weight: 500;
 				@include prefix(border-radius, 3px 3px 0 0);
 			}
 
