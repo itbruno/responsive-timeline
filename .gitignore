@@ -1,6 +1,8 @@
 # Default
 .DS_Store
 *.log
+*.map
+assets/
 
 # Node modules
 node_modules/

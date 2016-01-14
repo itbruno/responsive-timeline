@@ -10,7 +10,7 @@ var fd = {
 
 // Sass Task
 gulp.task('compile-sass', function(){
-	return gulp.src(fd.styles[0] + '*.scss')
+	return gulp.src(fd.styles[0] + '**/*.scss')
 		.pipe(sass({
 			style: "compressed",
 			noCache: true
