@@ -58,6 +58,10 @@ Paste the following markup in your main file.
 </div>
 ```
 
+### License
+[MIT License][4] © Bruno Rodrigues
+
 [1]: http://gulpjs.com/
-[2]: https://github.com/brunodsgn/responsive-timeline/tree/master/dev/sass/timeline.scss
+[2]: https://github.com/itbruno/responsive-timeline/tree/master/dev/sass/timeline.scss
 [3]: http://bit.ly/rtimeline
+[4]: http://github.com/itbruno/responsive-timeline/tree/master/LICENSE.txt
