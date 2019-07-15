@@ -61,7 +61,8 @@ $timeline-color: #ee4d4d;
 		.timeline-content {
 			width: 45%;
 			background: #fff;
-			padding: 20px;
+            padding: 20px;
+            position: relative;
 			@include prefix(box-shadow, 0 3px 0 rgba(0,0,0,0.1));
 			@include prefix(border-radius, 5px);
 			@include prefix(transition, all .3s ease);
@@ -78,24 +79,22 @@ $timeline-color: #ee4d4d;
 			&:before {
 				content: '';
 				position: absolute;
-				left: 45%;
-				top: 20px;
-				width: 0; 
-				height: 0; 
-				border-top: 7px solid transparent;
-				border-bottom: 7px solid transparent; 
-				border-left:7px solid $timeline-color; 
+                top: 20px;
+                right: -5px;
+                width: 14px;
+				height: 14px; 
+                background-color: $timeline-color;
+                display: block;
+                border-radius: 3px;
+                transform: rotate(45deg);
 			}
 
 			&.right {
 				float: right;
 
 				&:before {
-					content: '';
-					right: 45%;
-					left: inherit;
-					border-left: 0;
-					border-right: 7px solid $timeline-color;
+					left: -5px;
+                    right: inherit;
 				}
 			}
 		}
@@ -115,11 +114,10 @@ $timeline-color: #ee4d4d;
 				width: 90%;
 				float: right;
 				
-				&:before, &.right:before {
-					left: 10%;
-					margin-left: -6px;
-					border-left: 0;
-					border-right: 7px solid $timeline-color;
+                &:before,
+                &.right:before {
+					left: -5px;
+					right: inherit;
 				}
 			}
 
