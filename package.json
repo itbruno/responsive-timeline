@@ -1,8 +1,8 @@
 {
-  "name": "Timeline",
-  "version": "1.0.1",
-  "description": "Responsive timeline",
-  "repository": "https://github.com/brunodsgn/responsive-timeline",
+  "name": "Responsive timeline",
+  "version": "1.0.2",
+  "description": "Vertical timeline and responsive made with pure css/scss",
+  "repository": "https://github.com/itbruno/responsive-timeline",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
