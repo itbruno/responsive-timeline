@@ -4,19 +4,22 @@
 // Timeline
 $timeline-color: #ee4d4d;
 
-*, *:before, *:after {
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-}
-
 #timeline {
 	line-height: 1.5em;
 	font-size: 14px;
 	width: 90%;
 	margin: 30px auto;
 	position: relative;
-	@include prefix(transition, all .4s ease);
+    @include prefix(transition, all .4s ease);
+    
+    &, 
+    *, 
+    *:before,
+    *:after {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
 
 	&:before {
 		content:"";
