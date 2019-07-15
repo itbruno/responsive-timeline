@@ -43,7 +43,7 @@ Paste the following markup in your main file.
 	<div class="timeline-item">
 		<!--Icon inside the circle-->
 		<div class="timeline-icon">
-			<img src="assets/images/star.svg" alt="">
+			<img src="assets/images/star.svg" width="25px" alt="">
 		</div>
 		<!-- Content from timeline box and position (right or left)-->
 		<div class="timeline-content right">
